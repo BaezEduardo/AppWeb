@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>CV - Eduardo Arturo Baez Velasco</title>
+  <style>
+        :root {
+            --primary: #1a73e8;
+            --bg: #f8f9fa;
+            --text: #202124;
+        }
+        body { font-family: sans-serif; margin: 0; background: var(--bg); color: var(--text); }
+        
+        /* Contenedor Grid */
+        .wrapper {
+            display: grid;
+            grid-template-areas: 
+                "header header header"
+                "nav content aside"
+                "footer footer footer";
+            grid-template-columns: 200px 1fr 200px;
+            grid-template-rows: auto 1fr auto;
+            min-height: 100vh;
+            gap: 10px;
+        }
+
+        header { grid-area: header; background: var(--primary); color: white; padding: 20px; text-align: center; }
+        nav { grid-area: nav; background: #e8f0fe; padding: 20px; }
+        main { grid-area: content; background: white; padding: 20px; border: 1px solid #ddd; }
+        aside { grid-area: aside; background: #f1f3f4; padding: 20px; }
+        footer { grid-area: footer; background: #3c4043; color: white; padding: 15px; text-align: center; }
+
+        @media (max-width: 600px) {
+            .wrapper { grid-template-columns: 1fr; grid-template-areas: "header" "nav" "content" "aside" "footer"; }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header><h1>Mi Sitio Clásico</h1></header>
+        <nav><ul><li>Inicio</li><li>Temas</li></ul></nav>
+        <main><h2>Contenido Principal</h2><p>Layout con 3 columnas centrales.</p></main>
+        <aside><h4>Anuncios</h4><p>Publicidad aquí.</p></aside>
+        <footer><p>© 2026 Layout Clásico</p></footer>
+    </div>
+
+    <div class="cv-title">
+      CV
+    </div>
+
+    <div class="cv-image">
+      <img src="vj.jpg" alt="Imagen videojuegos">
+    </div>
+
+    <div class="cv-profile">
+      <section>
+      <h2>Perfil</h2>
+      <p>
+        Estudiante de Ingeniería en Ciencias de la Computación con experiencia en atención a clientes y soporte técnico
+        (Service Desk). Interesado en desarrollo de software y con alta competencia en inglés.
+      </p>
+    </section>
+
+    <section>
+      <h2>Educación</h2>
+
+      <div>
+        <h3>Ingeniería en Ciencias de la Computación</h3>
+        <p>Actualmente cursando 6º semestre</p>
+        <p>Benemérita Universidad Autónoma de Puebla — Puebla, México</p>
+      </div>
+    </section>
+
+    <section>
+        <h2>Experiencia</h2>
+
+        <div>
+            <h3>Service Desk — Cintas</h3>
+            <p>2022 – 2023 · Presencial · Puebla, México</p>
+            <ul>
+            <li>Soporte técnico de primer nivel y registro/seguimiento de tickets.</li>
+            <li>Diagnóstico básico, escalamiento y atención conforme a procesos.</li>
+            </ul>
+        </div>
+        
+
+        <div>
+            <h3>Customer Service — Amazon</h3>
+            <p>2021 – 2022 · Remoto</p>
+            <ul>
+            <li>Atención a clientes y resolución de incidencias de manera clara y eficiente.</li>
+            <li>Manejo de comunicación en inglés con enfoque en calidad y satisfacción del cliente.</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>Customer Service — DoorDash</h3>
+            <p>2021 – 2022 · Presencial · Puebla, México</p>
+            <ul>
+            <li>Resolución de problemas y soporte a usuarios dentro de tiempos establecidos.</li>
+            <li>Comunicación efectiva para orientar y dar soluciones prácticas.</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>Customer Service — Western Union</h3>
+            <p>2021 – 2022 · Presencial · Puebla, México</p>
+            <ul>
+            <li>Soporte a clientes en procesos y dudas relacionadas con el servicio.</li>
+            <li>Seguimiento de casos y atención basada en procedimientos.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+      <h2>Habilidades técnicas</h2>
+
+      <div>
+        <h3>Lenguajes de programación</h3>
+        <p>Python, C, Java, HTML, JavaScript</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Idiomas</h2>
+      <ul>
+        <li>Español: nativo</li>
+        <li>Inglés: avanzado (nivel alto)</li>
+        <li>Alemán: interés en aprender (básico / en progreso)</li>
+      </ul>
+    </section>
+    </div>
+
+    <!-- Contacto -->
+    <div class="cv-contact">
+      <h2>Contacto</h2>
+      <p>
+        📍 Puebla, México<br><br>
+        📞 2222566893<br><br>
+        ✉️ arturobaezvelasco@gmail.com<br><br>
+        🔗 GitHub: <br>
+        https://github.com/BaezEduardo<br><br>
+        
+      </p>
+    </div>
+
+  </div>
+
+</body>
+</html>
